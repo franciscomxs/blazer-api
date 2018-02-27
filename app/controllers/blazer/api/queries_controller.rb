@@ -6,7 +6,7 @@ module Blazer
           Blazer::Query.find(params[:id]).statement
         ].all
 
-        render json: JSON.generate(hashes)
+        render json: JSON.generate(hashes), status: 200
       end
     end
   end

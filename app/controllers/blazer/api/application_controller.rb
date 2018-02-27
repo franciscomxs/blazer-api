@@ -18,7 +18,7 @@ module Blazer
 
       def render_unauthorized
         self.headers["WWW-Authenticate"] = "Token realm=\"Application\""
-        render json: { error: 'Bad credentials' }, status: :unauthorized
+        render json: { error: 'Bad credentials' }, status: 401
       end
 
       def configuration
