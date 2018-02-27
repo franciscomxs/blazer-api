@@ -3,7 +3,7 @@ module Blazer
     class ApplicationController < ActionController::Base
       include ActionController::HttpAuthentication::Token::ControllerMethods
 
-      protect_from_forgery with: :exception
+      protect_from_forgery with: :null_session
       before_action :authenticate
 
       delegate :db, :authentication, to: :configuration
