@@ -1,6 +1,7 @@
 require "blazer/api/engine"
 require "blazer/api/configuration"
 require "sequel"
+require "rack/cors"
 
 module Blazer
   module Api

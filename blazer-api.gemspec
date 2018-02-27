@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rails', '< 6 ', '>= 4'
   spec.add_dependency 'blazer', '~> 1.8'
   spec.add_dependency 'sequel', '~> 5.0'
+  spec.add_dependency 'rack-cors', '~> 1.0'
 
   spec.add_development_dependency 'pg', '~> 0'
   spec.add_development_dependency 'rspec', '~> 3.6'
